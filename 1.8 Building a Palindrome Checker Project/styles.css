@@ -1,0 +1,134 @@
+:root {
+    /* colors */
+    --primary-color: #dfdfe2;
+    --secondary-color: #ffffff;
+    --app-background-color: #4d4d62;
+    --background-color: #1b1b32;
+    --foreground-color: #3b3b4f;
+    --highlight-color: #f1be32;
+    --root-font-size: 16px;
+    font-size: var(--root-font-size);
+    --font-headline: "Roboto Mono", monospace;
+    --font-family: "Lato", sans-serif;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
+   body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+  }
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+  }
+  .freecodecamp-logo{
+    height: 30px;
+  }
+
+  .title{
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  .palindrome-div{
+    width: min(100vw, 450px);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 2px 4px #002ead;
+  }
+label{
+  color: #1b1b32;
+  display: block;
+  font-size:1rem;
+  margin-bottom: 10px;
+}
+
+.input-text{
+  display: flex;
+  vertical-align: middle;
+}
+
+
+.palindrome-input{
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  margin-right: 5px;
+  
+  border: 1px solid #f1be32;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.palindrome-input:focus{
+  border-color: #f1be32;
+  border: 1px solid #f1be32;
+  outline: none;
+  box-shadow: 0 0 3px 0 rgba(241, 190, 50, 0.5);
+}
+
+
+.palindrome-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color:var(--highlight-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hidden{
+  display: none;
+}
+.palindrome-btn:hover {
+    background-color: #f3a127;
+}
+
+/* Results Div */
+.results-div {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #27ae60;
+    min-height: 20px;
+    align-content: middle;
+}
+
+/* Palindrome Definition */
+.palindrome-definition-div {
+  width: min(100vw, 450px);
+    border-radius: 4px;
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #1b1b32;
+    background-color: #ecf0f1;
+    border-top: 5px solid #f1be32;
+    border-bottom: 5px solid #f1be32;
+}
+.palindrome-definition-div p{
+   text-align: justify;
+   margin: 5 px 10px;
+}
