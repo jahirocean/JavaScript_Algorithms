@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <img
+          class="logo"
+          src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+          alt="freeCodeCamp Logo"
+        />
+        <h1>Cash Register</h1>
+      </header>
+      <section class="form-section">
+        <label for="cash">Enter cash from customer:</label>
+        <input type="number" id="cash" class="user-input" placeholder="Enter cash" />
+        <button id="purchase-btn" class="button">Calculate</button>
+      </section>
+      <section class="register">
+        <div id="price-screen" class="screen">Price: $3.26</div>
+        <div id="change-due" class="output"></div>
+        <div id="cash-drawer-display" class="drawer">Cash Drawer:</div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
